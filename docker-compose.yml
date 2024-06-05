@@ -1,0 +1,9 @@
+services:
+  vpn:
+    build: .
+    network_mode: "host"
+    restart: always
+    env_file:
+      - .env
+    #environment:
+    #  - PRITUNL_PROFILE=
